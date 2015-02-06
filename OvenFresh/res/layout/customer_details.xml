@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CustomWindowTitleBarBG"
+    android:padding="5dp"
+    android:orientation="vertical" >
+    
+     <TextView 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      style="@style/TextViewStylingPageHeader"
+      android:layout_marginTop="10dp"
+      android:textColor="@color/custom_title_background"
+      android:text="@string/info"
+      />
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        > 
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    
+   <LinearLayout
+       	android:id="@+id/mobileLayout" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            
+    <EditText
+        android:id="@+id/mobile_number" 
+        style="@style/CustomerEditTextHeader"
+        android:hint="@string/enter_mobile"
+        android:inputType="number"
+        android:maxLength="10"
+        
+        />
+    
+    <Button 
+        android:id="@+id/check_exist"
+        style="@style/OvenFreshButtonStyling"
+        android:text="@string/checkuserexist"
+        android:onClick="checkUserExist"
+       />
+    
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/user_welcome" 
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/custom_title_background"
+		android:gravity="center"
+		android:textSize="20sp"
+        android:visibility="gone"
+        />
+    
+      <TextView
+        android:id="@+id/message" 
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/red"
+		android:gravity="center"
+        android:visibility="gone"
+        />
+      
+      <View 
+          android:layout_width="fill_parent"
+          android:layout_height="2dp"
+          android:background="@color/black"
+          />
+    
+   
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/customer_info">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/details_info">    
+    
+    <EditText
+        android:id="@+id/first_name" 
+        style="@style/CustomerEditTextHeader"
+        android:hint="@string/first_name"
+        android:inputType="text"
+        />
+    
+    <EditText
+        android:id="@+id/last_name" 
+        style="@style/CustomerEditTextHeader"
+        android:hint="@string/last_name"
+         android:inputType="text"
+        />
+    
+    <EditText 
+        android:id="@+id/email"
+        style="@style/CustomerEditTextHeader"
+        android:hint="@string/email_address"
+         android:inputType="text"
+        />
+	
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/mobile_info">
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="100">
+    
+     <TextView
+        style="@style/CustomerEditTextHeader"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_weight="35"
+        android:text="@string/mobile"
+        />
+    
+     <TextView
+        android:id="@+id/mobile_TextView" 
+        style="@style/CustomerEditTextHeader"
+        android:layout_marginLeft="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="65"
+        />
+     
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="100">
+    
+     <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/black"
+    	android:layout_weight="35"
+    	android:layout_width="0dp"
+        android:text="@string/email"
+        />
+    
+     <TextView
+        android:id="@+id/email_TextView" 
+        style="@style/CustomerEditTextHeader"
+        android:layout_marginLeft="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="60"
+        />
+     
+    </LinearLayout>
+     
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+	
+     <EditText 
+         android:id="@+id/select_date"
+         style="@style/CustomerEditTextHeader"
+         android:layout_width="0dp"
+         android:layout_weight="80"
+         android:hint="@string/delivery_date"
+         android:visibility="visible"
+         android:enabled="false"/> 
+          
+     <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/buttonSelectDate"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/date"
+        />
+     
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+	
+     <EditText 
+         android:id="@+id/select_time"
+         style="@style/CustomerEditTextHeader"
+         android:layout_width="0dp"
+         android:layout_weight="80"
+         android:hint="@string/delivery_time"
+         android:visibility="visible"
+         android:enabled="false"/>  
+         
+      <ImageView
+        android:id="@+id/buttonSelectTime"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/time"
+        />
+     
+    </LinearLayout>
+    
+       <TextView
+        android:id="@+id/email_click"
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/blue"
+        android:text="@string/terms"
+		android:layout_marginTop="5dp" 
+		android:textSize="15sp"  
+		android:onClick="openTermsCondition" 
+		android:clickable="true"    
+        />
+    
+    
+     <Button 
+        android:id="@+id/submit_details"
+        style="@style/OvenFreshButtonStyling"
+        android:text="@string/submit"
+        android:onClick="submitOrder"
+       />
+     
+     </LinearLayout>
+     
+    </LinearLayout>    
+     
+    
+     </ScrollView>
+
+</LinearLayout>

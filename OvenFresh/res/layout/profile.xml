@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CustomWindowTitleBarBG"
+    android:background="@drawable/contactfinal"
+    android:orientation="vertical" >
+    
+      
+    <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/custom_title_background"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/configureAccount"
+        />
+    
+     
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="100">
+    
+     <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_weight="35"
+        android:text="@string/mobile"
+        />
+    
+     <EditText
+        android:id="@+id/profile_mobile" 
+        style="@style/CustomerEditTextHeader"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="65"
+        android:enabled="false"
+        android:inputType="number"
+        />
+     
+    </LinearLayout>
+    
+   <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+    
+     <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_weight="35"
+        android:text="@string/new_mobile"
+        />
+    
+     <EditText
+        android:id="@+id/new_mobile" 
+        style="@style/CustomerEditTextHeader"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+        android:hint="@string/newnum"
+        android:maxLength="10"
+        android:layout_weight="65"
+        android:inputType="number"
+        />
+     
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+    
+     <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/black"
+         android:layout_width="0dp"
+        android:layout_weight="35"
+        android:text="@string/first"
+        />
+     
+    <EditText
+        android:id="@+id/profile_first_name" 
+        style="@style/CustomerEditTextHeader"
+         android:layout_width="0dp"
+         android:layout_marginLeft="5dp"
+        android:layout_weight="65"
+        android:inputType="text"
+        />
+    
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+    
+     <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/black"
+         android:layout_width="0dp"
+        android:layout_weight="35"
+        android:text="@string/last"
+        />
+    
+    <EditText
+        android:id="@+id/profile_last_name" 
+        style="@style/CustomerEditTextHeader"
+         android:layout_width="0dp"
+         android:layout_marginLeft="5dp"
+        android:layout_weight="65"
+         android:inputType="text"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+    
+     <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/black"
+         android:layout_width="0dp"
+        android:layout_weight="35"
+        android:text="@string/email"
+        />
+    
+    
+    <EditText 
+        android:id="@+id/profile_email"
+        style="@style/CustomerEditTextHeader"
+         android:layout_width="0dp"
+         android:layout_marginLeft="5dp"
+        android:layout_weight="65"
+         android:inputType="text"
+        />
+    
+    </LinearLayout>
+	
+    
+     <Button 
+        android:id="@+id/profile_submit_details"
+        style="@style/OvenFreshButtonStyling"
+        android:text="@string/submitprofile"
+        android:onClick="submitProfileOrder"
+       />
+    
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/CustomWindowTitleBarBG"
+    >
+    
+      <TextView 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      style="@style/TextViewStylingPageHeader"
+      android:layout_marginTop="10dp"
+      android:textColor="@color/custom_title_background"
+      android:text="@string/cancelorder"
+      />  
+      
+   <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black"/>
+    
+   <ListView
+        android:id="@+id/cancelorderlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="4dp"
+        />
+
+</LinearLayout>

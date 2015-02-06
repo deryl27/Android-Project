@@ -1,0 +1,153 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="CustomWindowTitleBarBG">
+              <item name="android:background">#FFFFFF</item>
+      </style>
+   
+    <style name="customTheme" parent="android:Theme"> 
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>  
+        <item name="android:windowTitleSize">50dp</item> 
+    </style> 
+    
+    <style name="WindowTitleBackground">     
+        <item name="android:background">@color/custom_title_background</item>                   
+    </style>
+    
+    <style name="TextViewStyling">
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">@color/black</item>  
+    </style>
+    
+    <style name="TextViewStylingHeader">
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/black</item>  
+    </style>
+    
+    <style name="TextViewStylingPageHeader">
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/black</item>  
+    </style>
+    
+       <style name="ButtonViewStyling">
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/white</item>  
+    </style>
+    
+    <style name="CustomTitleViewStyling">
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/white</item>  
+    </style>
+    
+    <style name="ProductTextViewStylingHeader">
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textSize">13sp</item>
+		<item name="android:textColor">@color/custom_title_background</item>  
+    </style>
+    
+     <style name="ProductTextViewProductName">
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">italic</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/custom_title_background</item>  
+    </style>
+    
+     <style name="QuantityTextView">
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">italic</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/custom_title_background</item>  
+    </style>
+    
+    <style name="QuantityTextViewLabel">
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:gravity">left</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">@color/black</item>  
+    </style>
+    
+   <style name="OrderTextViewStylingHeader">
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">@color/custom_title_background</item>  
+    </style>
+     
+   
+   <style name="CustomerEditTextHeader">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_marginTop">10dp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/black</item>  
+    </style>
+    
+   <style name="OvenFreshButtonStyling">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_marginTop">10dp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/white</item> 
+		<item name="android:background">@drawable/button</item>
+   </style>
+   
+   <style name="MenuButtonActivityTextViewStyling">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">@color/black</item> 
+   </style>
+   
+   <style name="MenuButtonActivityButtonStyling">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">sans-serif</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_weight">50</item> 
+		<item name="android:background">@color/custom_title_background</item>      
+		
+   </style>
+       
+   
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    style="@style/CustomWindowTitleBarBG"
+    >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+    
+        
+      <TextView 
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="70"
+      style="@style/TextViewStylingPageHeader"
+      android:layout_marginTop="10dp"
+      android:textColor="@color/custom_title_background"
+      android:text="@string/mybooking"
+      />  
+      
+      <ImageView 
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="30"
+          android:layout_marginTop="10dp"
+          android:onClick="refreshBooking"
+          android:src="@drawable/sync"/>
+      
+      </LinearLayout>
+      
+   <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black"/>
+ 
+            <ExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>  
+                
+            <TextView 
+			       android:id="@+id/msg_text"
+			       android:layout_width="match_parent"
+			       android:layout_height="match_parent"
+			       android:textSize="18sp"
+			       android:layout_gravity="center"
+			       android:gravity="center"
+			       android:visibility="gone"
+     		/>
+
+ 
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/CustomWindowTitleBarBG"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical" >
+    >
+	<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal" >
+	
+    <TextView 
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:layout_height="wrap_content"
+        style="@style/TextViewStyling"
+        android:id="@+id/order_name"/>
+    
+	<TextView 
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content"
+        style="@style/TextViewStyling"
+        android:id="@+id/order_quantity"/>
+	
+	<TextView 
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content"
+        style="@style/TextViewStyling"
+        android:id="@+id/order_item"/>
+	
+	<TextView 
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content"
+        style="@style/TextViewStyling"
+        android:id="@+id/order_price"/>
+	
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:gravity="right"
+	    android:orientation="horizontal">
+	
+	 <TextView 
+	    android:id="@+id/product_position"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"/>   
+	
+	 <ImageView 
+	    android:id="@+id/editProductButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:onClick="editOrderList"
+        android:src="@drawable/edit"/>
+  	
+	 <ImageView 
+	    android:id="@+id/deleteProductButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+         android:onClick="removeOrderList"
+        android:src="@drawable/remove"/>
+	 
+	 </LinearLayout>
+</LinearLayout>

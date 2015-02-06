@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Oven Fresh</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="quantity_prompt">Select Quantity</string>
+    
+    <string name="menu">Oven Fresh</string>
+    <string name="sub_menu">SUB MENU</string>
+    
+    <string name="total">TOTAL</string>
+    <string name="checkout">Proceed To CheckOut</string>
+    
+    <string name="name">NAME</string>
+    <string name="quantity">Quantity</string>
+    <string name="quantitydisplay">Quantity :</string>
+    <string name="price">PRICE</string>
+    <string name="item">ITEM</string>
+    <string name="remove">Remove</string>
+   
+    
+    <string name="my_order">My Order</string>
+    <string name="submitprofile">Submit</string>
+    <string name="select_quantity">Select Quantity</string>
+    <string name="select_item">Select Number of Item</string>
+    <string name="cart">Add To Cart</string>
+    <string name="order_content">OUR MENU</string>
+    
+    <string name="actual_price">Actual Price</string>
+    <string name="register">Register</string>
+    
+    <!--  CUSTOMER DETAIS  -->
+    <string name="enter_mobile">Enter 10 digit Mobile Number</string>
+    <string name="first_name">Enter First Name</string>
+    <string name="last_name">Enter Last Name</string>
+    <string name="email_address">Enter Email Address</string>
+    <string name="submit">Submit Order</string>
+    <string name="checkuserexist">User Exist ?</string>
+    <string name ="date">Select Date</string>
+    <string name ="time">Select Time</string>
+    <string name ="info">My Info</string>
+    <string name="delivery_date">Order Collection Date</string>
+    <string name="delivery_time">Order Collection Time</string>
+    <string name="hours">HH</string>
+    <string name="minutes">MM</string>
+    
+    <!--  Order Status  -->
+    <string name ="order_status">Order Status</string>
+    <string name ="backtomenu">Main Category</string>
+    
+      <!-- Menu  -->
+    <string name ="cancelorder">Cancel Order</string>
+    <string name ="mybooking">My Booking</string>
+    <string name ="profile">Profile</string>
+    <string name ="note">Important</string>
+    
+    <!-- MY BOOKING -->
+	<string name="order_id">Order Id:</string>
+    <string name="totalprice">Total:</string>
+    <string name="mobile">Mobile No:</string>
+    <string name="new_mobile">New No:</string>
+    <string name="enter_new_mobile">Enter 10 Digit New Number</string>
+    <string name="first">First Name:</string>
+    <string name="last">Last Name:</string>
+    <string name="email">Email:</string>
+    <string name="deliverydate">Delivery Date:</string>
+	<string name="deliverytime">Delivery Time:</string>
+	<string name="status">Status:</string>
+	<string name="viewitem">View Items</string>    
+	<string name="updateCart">Update Cart</string> 
+	<string name="configureAccount">Configure Account</string>    
+	
+	<string name="removeItem">Remove From Cart</string>
+    
+	<string name="set">Set</string>
+	<string name="cancel">Cancel</string>
+	
+	<string name="welcome_message">Welcome to OvenFresh</string>
+	<string name="message_center">Make your holiday sweeter! \nRegister with us and enjoy a wide range of \nhome baked cakes, sweets and more</string>
+	<string name="lower_message">Be sure to checkout some of \n our hot favourite this season</string>
+	
+	
+	<string name="main_message">"Get started with our lip-smacking \nlist of Cakes and Sweets"</string>
+	
+	<string name="shop_cakes">Shop Cakes </string>
+	<string name="shop_sweets">Shop Sweets </string>
+	
+	<string name="contactus">Contact Us </string>
+
+	<string name="owner">Prisca D\u0027souza</string>
+	<string name="contact_number">9821294292, 02226793739</string>
+	<string name="address">23/B Wildflower, 1st floor, \nJai Bhavani Mata Marg \nAmboli, Andheri (West) \nMumbai 400058"</string> 	
+	<string name="email_header">Send your valuable feedback at:</string>
+	<string name="remail"><u>ovenfreshreview@gmail.com</u></string>
+	<string name="newnum">10 Digit New Number</string>
+	<string name="terms"><u>Terms and Conditions</u></string>
+	<string name="termsc">Terms and Conditions</string>
+	<string name="content">1. Orders accepted from Mumbai City only. \n2. Order needs to be placed at least 4 days in advance.\n3. Payment against delivery.\n4. We currently do not support Free Home Delivery. User will have to enter Order Collection Date and Time before placing the Order.\n5. Order booking deadline for Christmas Sweets: not later than 15th December, 2014.\n6. Order can be cancelled within half an hour from the time Order has been placed. Thereafter the order will be treated as final.\n7. User will be contacted for Order Confirmation.\n8. Delay in Order Processing would be conveyed to the Customer.\n9. User will be notified when Order is ready. Order can be collected at the address mentioned on Contact Us Page.\n10. For any queries please feel free to email: <u>ovenfreshreview@gmail.com</u></string>
+	
+	<string-array name="items">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+	</string-array>
+	
+	<string-array name="sweetquantity">
+    <item>Select</item>
+    <item>250 gm </item>
+    <item>500 gm</item>
+    <item>1 kg</item>
+    <item>2 kg</item>
+    <item>3 kg</item>
+    <item>4 kg</item>
+    <item>5 kg</item>
+    <item>6 kg</item>
+    <item>7 kg</item>
+    <item>8 kg</item>
+    <item>9 kg</item>
+    <item>10 kg</item>
+	</string-array>
+	
+	<string-array name="cakequantity">
+     <item>1 kg</item>
+    <item>2 kg</item>
+    <item>3 kg</item>
+    <item>4 kg</item>
+    <item>5 kg</item>
+    <item>6 kg</item>
+    <item>7 kg</item>
+    <item>8 kg</item>
+    <item>9 kg</item>
+    <item>10 kg</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    style="@style/CustomWindowTitleBarBG"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        
+          <TextView
+            android:layout_weight="50"
+            android:text="@string/order_id"
+            style="@style/MenuButtonActivityTextViewStyling"
+            />
+        
+          <TextView
+            android:id="@+id/orderid" 
+            android:layout_weight="50"
+            style="@style/MenuButtonActivityTextViewStyling"
+            />
+    </LinearLayout>
+    
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+    
+         <TextView
+          	style="@style/MenuButtonActivityTextViewStyling"
+            android:text="@string/totalprice"
+            android:layout_weight="50"
+            />
+            
+              <TextView
+            android:id="@+id/price" 
+            style="@style/MenuButtonActivityTextViewStyling"
+            android:layout_weight="50"
+            />
+      </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        
+          <TextView
+          	 style="@style/MenuButtonActivityTextViewStyling"
+             android:layout_weight="50"
+             android:text="@string/deliverydate"
+            />
+        
+            <TextView
+            android:id="@+id/deliverydate" 
+            style="@style/MenuButtonActivityTextViewStyling"
+            android:layout_weight="50"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        
+          <TextView
+           style="@style/MenuButtonActivityTextViewStyling"
+            android:layout_weight="50"
+            android:text="@string/deliverytime"
+            />
+        
+            <TextView
+            android:id="@+id/deliverytime" 
+         	style="@style/MenuButtonActivityTextViewStyling"
+            android:layout_weight="50"
+            />
+    </LinearLayout>
+    
+       <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        
+          <TextView
+         	style="@style/MenuButtonActivityTextViewStyling"
+            android:layout_weight="50"
+            android:text="@string/status"
+            />
+        
+            <TextView
+            android:id="@+id/status" 
+         	style="@style/MenuButtonActivityTextViewStyling"
+            android:layout_weight="50"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginTop="10dp">
+    
+  	<Button
+  	    style="@style/MenuButtonActivityButtonStyling"
+  	    android:text="@string/viewitem"
+  	    android:paddingTop="5dp"
+  	    android:paddingBottom="5dp"
+  	    android:onClick="showItem"/>
+  	
+  	<Button
+  	    android:id="@+id/cancel_order_button"
+  	    style="@style/MenuButtonActivityButtonStyling"
+  	    android:layout_marginLeft="10dp"
+  	    android:text="@string/cancelorder"
+  	    android:paddingTop="5dp"
+  	    android:paddingBottom="5dp"
+  	    android:visibility="gone"
+  	    android:onClick="cancelOrder"/>
+  	
+  	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CustomWindowTitleBarBG"
+    android:padding="5dp"
+    android:orientation="vertical" >
+    
+     <TextView 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      style="@style/TextViewStylingPageHeader"
+      android:layout_marginTop="10dp"
+      android:textColor="@color/custom_title_background"
+      android:text="@string/order_status"
+      />
+    
+    <TextView 
+        android:id="@+id/order_report"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        />
+    
+     <Button 
+        android:id="@+id/categoryButton"
+        style="@style/OvenFreshButtonStyling"
+        android:text="@string/backtomenu"
+        android:onClick="proceedToCategory"
+       />
+     
+     <Button 
+        android:id="@+id/mybokingButton"
+        style="@style/OvenFreshButtonStyling"
+        android:text="@string/mybooking"
+        android:onClick="proceedToMyBooking"
+       />
+	
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CustomWindowTitleBarBG"
+    android:background="@drawable/contactfinal"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+    
+    
+   <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/custom_title_background"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/contactus"
+        />
+    
+   <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/black"
+        android:text="@string/owner"
+		android:layout_marginTop="10dp"        
+        android:textStyle="bold"
+        />
+
+   <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/black"
+        android:layout_marginTop="0dp"
+        android:text="@string/contact_number"
+        />
+   
+    <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/black"
+        android:text="@string/address"
+		android:layout_marginTop="10dp"        
+        />
+    
+     <TextView
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/black"
+        android:text="@string/email_header"
+		android:layout_marginTop="10dp"        
+        />
+     
+       <TextView
+        android:id="@+id/email_click"
+        style="@style/CustomerEditTextHeader"
+        android:textColor="@color/blue"
+        android:text="@string/remail"
+		android:layout_marginTop="0dp"   
+		android:onClick="openEmail" 
+		android:clickable="true"    
+        />
+     
+   </LinearLayout>
+   
+</LinearLayout>

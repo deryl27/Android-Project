@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/CustomWindowTitleBarBG"
+    android:orientation="horizontal"
+    >
+    
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        >
+ 
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cake1"/>
+ 
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+    <TextView 
+        android:id="@+id/product_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/ProductTextViewProductName"
+        android:text="Strawberry Cake"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+    
+    <TextView
+        android:id="@+id/product_price" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ProductTextViewStylingHeader"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="20"
+       />
+    
+       <TextView
+        android:id="@+id/product_id" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ProductTextViewStylingHeader"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="20"
+        android:visibility="gone"
+       />
+       
+        <TextView
+        android:id="@+id/product_category" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ProductTextViewStylingHeader"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="20"
+        android:visibility="gone"
+       />
+    
+    </LinearLayout>
+    
+     <Button 
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        style="@style/ButtonViewStyling"
+        android:text="Add to Cart"
+        android:onClick="addProductToCart"
+        android:textSize="13sp"
+        android:background="@color/custom_title_background"
+        android:layout_gravity="right"
+        />
+    
+   </LinearLayout>
+   
+   
+
+</LinearLayout>

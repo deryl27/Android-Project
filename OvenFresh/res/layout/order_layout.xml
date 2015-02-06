@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    style="@style/CustomWindowTitleBarBG"
+    >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextViewStylingPageHeader"
+        android:textColor="@color/custom_title_background"
+        android:layout_weight="10"
+        android:text="@string/my_order"/>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:layout_weight="10"
+    android:orientation="horizontal" >
+	
+    <TextView 
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:layout_height="wrap_content"
+        style="@style/OrderTextViewStylingHeader"
+        android:text="@string/name"
+        />
+    
+	<TextView 
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content"
+        style="@style/OrderTextViewStylingHeader"
+         android:text="@string/quantity"/>
+	
+	<TextView 
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content"
+      	style="@style/OrderTextViewStylingHeader"
+         android:text="@string/item"/>
+	
+	 <TextView 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        style="@style/OrderTextViewStylingHeader"
+       	android:text="@string/price"/>
+	</LinearLayout>
+    
+   <ListView
+        android:id="@+id/list_order"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        />
+   
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="0dp"
+       android:orientation="vertical"
+       android:layout_weight="30"
+      >
+	 	
+       <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="100">
+       
+	        <TextView 
+	        android:layout_width="0dp"
+	        android:layout_weight="50"
+	        android:gravity="center"
+	        android:layout_height="wrap_content"
+	        style="@style/TextViewStylingHeader"
+	        android:text="@string/total"
+	        />
+	         
+	        <TextView 
+	        android:id="@+id/total_sum"
+	        android:layout_width="0dp"
+	        android:layout_weight="50"
+	        android:layout_height="wrap_content"
+	        style="@style/TextViewStylingHeader"
+	        />
+        
+        </LinearLayout>
+        
+       <Button 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           style="@style/ButtonViewStyling"
+           android:background="@drawable/button"
+           android:onClick="proceedToCheckOut"
+           android:text="@string/checkout"/>
+        	
+   </LinearLayout>
+   
+   
+
+</LinearLayout>

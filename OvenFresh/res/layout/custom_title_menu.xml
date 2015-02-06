@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100"
+    android:background="@color/logo"
+    android:orientation="horizontal" >
+    
+    <ImageView 
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="10"
+        android:layout_gravity="center"
+         android:onClick="gobackToHome"
+        android:src="@drawable/logo"/>
+    
+    <TextView 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+		android:layout_marginLeft="5dp"
+		android:layout_weight="80"
+		android:gravity="center_vertical"
+		 style="@style/CustomTitleViewStyling"
+        android:text="@string/menu"
+        />
+    
+    <RelativeLayout 
+        android:layout_weight="10"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+    
+     <ImageView 
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="displayOrderedItem"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cart_new"/>
+     
+     <TextView 
+         android:id="@+id/cart_number"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+		 android:layout_marginTop="5dp"
+		 android:layout_marginLeft="30dp"
+         android:textColor="@color/white"
+         android:textSize="15sp"
+         android:textStyle="bold"
+         />
+     
+     </RelativeLayout>
+     
+      <ImageView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:onClick="displaymenu"
+        android:src="@drawable/menunew"/>
+    
+
+</LinearLayout>

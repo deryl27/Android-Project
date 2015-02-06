@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/regbackground"
+    >
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/registrationlogo"
+        android:layout_marginTop="20dp"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_message"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+    
+     
+     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_center"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+        
+    
+    <EditText
+        android:id="@+id/reg_mobile_number" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:hint="@string/enter_mobile"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:maxLength="10"
+        android:layout_marginTop="10dp"
+        />
+    
+    <Button 
+        android:id="@+id/registerationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="18sp"
+        android:background="@color/yellow"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:onClick="Registeration"
+        android:layout_marginTop="10dp"/>
+    
+     <TextView
+        android:id="@+id/reg_message" 
+        style="@style/CustomerEditTextHeader"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        />
+     
+       <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lower_message"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+       
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottomregistration"
+        android:layout_marginTop="20dp"/>   
+
+</LinearLayout>
+
