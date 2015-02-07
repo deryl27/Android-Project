@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AnyTime Weather</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="dummy_section_text">Section %1s is just a dummy section.</string>
+    <string name="add_location">Add Location</string>
+    <string name="about">About</string>
+    <string name="mylocation">My Location</string>
+    <string name="select_location">Select Location</string>
+    
+   
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    
+    <string name="city">City</string>
+    
+    <string name="tweleveam">12 am</string>
+    <string name="threeam"> 3 am</string>
+    <string name="sixam"> 6 am</string>
+    <string name="nineam"> 9 am</string>
+    <string name="twelvepm">12 pm</string>
+    <string name="threepm"> 3 pm</string>
+    <string name="sixpm"> 6 pm</string>
+    <string name="ninepm"> 9 pm</string>
+    
+    
+    <string name="cities">My Cities</string>
+    <string name="about_text">Weather ForeCast enables the user to view the forecast for the city which they are interested in.
+        The application provides user with updated weather forecast for all the cities.</string>
+    
+    <string name="developed"> Developed by Deryl Rodrigues </string>
+    
+    <string name="email"> deryl.allan24@gmail.com </string>
+
+    <string name="error_msg">Some Problem in Connectivity. Please try again after some time</string>
+    
+    <string-array name="location_array">
+        <item>California</item>
+        <item>Boston</item>
+        <item>London</item>
+        <item>Mumbai</item>
+    </string-array>
+
+</resources>

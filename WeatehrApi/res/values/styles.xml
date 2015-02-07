@@ -1,0 +1,48 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="customTheme" parent="android:Theme"> 
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>  
+        <item name="android:windowTitleSize">50dp</item> 
+    </style> 
+    
+     <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme"
+           parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+           parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/blue</item>
+    </style>
+    
+    
+    <style name="WindowTitleBackground">     
+        <item name="android:background">@color/custom_title_background</item>                   
+    </style>
+    
+    <style name="HeaderStyle">
+       <item name="android:textStyle">bold</item>
+	   <item name="android:textSize">18sp</item>
+	   <item name="android:textColor">@color/white</item> 
+    </style>
+    
+</resources>
